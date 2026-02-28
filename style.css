@@ -1,0 +1,275 @@
+/*
+Theme Name: Mon Portfolio
+Author: Pierre Soreau
+Version: 1.0
+*/
+
+/*===========================================
+                HEADER
+===========================================*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 100vw;
+  padding: 0 10px;
+  font-weight: 700;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.menu-burger {
+  height: 80%;
+  width: auto;
+  background-color: #f8f9fa;
+  border: none;
+}
+
+.menu-burger i:last-child {
+  display: none !important;
+}
+
+.menu-burger.is-open i:first-child {
+  display: none !important;
+}
+
+.menu-burger.is-open i:last-child {
+  display: inline-block !important;
+}
+
+.portfolio-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  height: 100%;
+  width: auto;
+  font-size: 16px;
+  white-space: nowrap; /* Empêche le texte de passer à la ligne */
+}
+
+.photo-profil {
+  width: 60px;
+  height: 60px;
+}
+
+.photo-profil img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.menu-liste {
+  display: none;
+  list-style: none;
+  padding: 0; /* Enlève le retrait par défaut des listes */
+  margin: 0; /* Sécurité supplémentaire */
+}
+
+.menu-liste.show {
+  display: flex;
+  position: absolute;
+  top: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f172a;
+  width: 100vw;
+  height: auto;
+  left: 0;
+}
+
+.menu-liste li:first-child {
+  border-top: 1px solid white;
+  margin-top: -1px;
+}
+
+.menu-liste li {
+  border-bottom: 1px solid white;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+.menu-liste li a {
+  color: white !important;
+}
+
+.download {
+  width: auto;
+  height: auto;
+  display: none;
+}
+.download-cv {
+  background-color: #0f172a;
+  color: #ffffff !important;
+  padding: 12px 24px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #0f172a; /* Bordure de la même couleur */
+}
+
+/*===========================================
+                MAIN
+  ===========================================*/
+
+main {
+  max-width: 310px;
+  margin: 0 auto;
+  padding: 60px 0px;
+}
+
+/*===========================================
+                FOOTER
+===========================================*/
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 12px 24px;
+  width: fit-content;
+  border-radius: 20px;
+  position: sticky;
+  bottom: 20px;
+  background-color: #0f172a;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.3);
+  margin: 0 auto;
+}
+
+.size {
+  height: 30px;
+  width: 30px;
+  background-color: transparent;
+  border: none;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.size:hover {
+  transform: translateY(-5px);
+}
+
+.size i {
+  font-size: 30px;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.size:hover i {
+  color: #cbd5e1;
+}
+
+@media (min-width: 600px) {
+  /*===========================================
+                HEADER
+  ===========================================*/
+
+  .portfolio-container {
+    position: absolute;
+    left: 10px;
+    transform: translateX(0%);
+    font-size: 20px;
+  }
+
+  .menu-burger {
+    display: none;
+  }
+
+  .menu-liste {
+    display: flex !important; /* On force l'affichage horizontal */
+    position: absolute;
+    width: auto; /* On ne prend plus tout l'écran */
+    background-color: transparent; /* On utilise le fond du header */
+    gap: 5px;
+    list-style: none;
+    right: 10px;
+    white-space: nowrap;
+  }
+
+  .menu-liste li {
+    border: none;
+    padding: 0;
+    transition: all 0.3s ease;
+  }
+
+  .menu-liste li a {
+    color: #0f172a !important;
+    padding: 8px 16px;
+    border-radius: 5px;
+    display: block;
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .menu-liste li a:hover {
+    background-color: #0f172a;
+    color: #ffffff !important;
+  }
+
+  /*===========================================
+                MAIN
+  ===========================================*/
+
+  main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  /*===========================================
+              HEADER
+  ===========================================*/
+
+  .portfolio-container {
+    position: static;
+  }
+
+  .menu-liste {
+    position: static;
+    gap: 20px;
+  }
+  .download {
+    display: flex;
+  }
+
+  .download-cv {
+    transition: all 0.3s ease;
+  }
+
+  .download-cv:hover {
+    background-color: transparent; /* Le fond devient vide */
+    color: #0f172a !important; /* Le texte devient bleu nuit */
+    transform: translateY(-3px); /* Le bouton s'élève légèrement */
+    box-shadow: 0 10px 20px rgba(15, 23, 42, 0.1); /* Ombre douce */
+  }
+
+  /*===========================================
+                MAIN
+  ===========================================*/
+
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 20px;
+  }
+}

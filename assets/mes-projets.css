@@ -1,0 +1,89 @@
+.liste-projets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 310px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.project-card {
+  border: 1px solid #cbd5e1;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.project-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.project-text-content {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.project-text-content h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.project-text-content h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 12px;
+  color: #5f646c;
+}
+
+.project-text-content p {
+  font-size: 12px;
+}
+
+.description {
+  height: 200px;
+}
+
+.stacks-content,
+.button-link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.project-card span {
+  font-size: 10px;
+  background-color: #cfd1d6;
+  color: #334155;
+  border-radius: 20px;
+  padding: 5px 12px;
+}
+
+.button-link-project {
+  display: flex;
+  background-color: #0f172a;
+  gap: 5px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.button-link-project:hover {
+  transform: translateY(-5px);
+}
+
+.button-link-project i,
+.button-link-project p {
+  font-size: 12px;
+  color: white;
+}
+
+.titre-page-projets {
+  text-align: center;
+}

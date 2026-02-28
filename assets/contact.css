@@ -1,0 +1,61 @@
+/* Les labels des champs */
+div.wpforms-container-full .wpforms-form .wpforms-field-label {
+  color: #0f172a;
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* L'astérisque rouge pour les champs obligatoires */
+div.wpforms-container-full .wpforms-form .wpforms-required-label {
+  color: #e11d48;
+}
+
+/* 2. Les champs de saisie (Inputs et Textarea) */
+.wpforms-container-full .wpforms-form input[type="text"],
+.wpforms-container-full .wpforms-form input[type="email"],
+.wpforms-container-full .wpforms-form textarea {
+  background-color: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 14px 18px;
+  color: #0f172a;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: none;
+}
+
+/* Effet au clic des champs */
+div.wpforms-container-full .wpforms-form input[type="text"]:focus,
+div.wpforms-container-full .wpforms-form input[type="email"]:focus,
+div.wpforms-container-full .wpforms-form textarea:focus {
+  border-color: #0f172a;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.1);
+}
+
+/* Les sous-labels (Prénom, Nom) */
+div.wpforms-container-full .wpforms-form .wpforms-field-sublabel {
+  color: #64748b;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+/*Le bouton Envoyer */
+div.wpforms-container-full .wpforms-form button[type="submit"] {
+  background-color: #0f172a !important;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 14px 35px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+div.wpforms-container-full .wpforms-form button[type="submit"]:hover {
+  transform: translateY(-3px);
+}

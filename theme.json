@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "settings": {
+    "color": {
+      "background": false,
+      "custom": false,
+      "defaultPalette": false
+    },
+    "typography": {
+      "customFontSize": false,
+      "fontSizes": [
+        {
+          "name": "Normal",
+          "size": "16px",
+          "slug": "normal"
+        },
+        {
+          "name": "Grand",
+          "size": "24px",
+          "slug": "grand"
+        }
+      ]
+    }
+  }
+}

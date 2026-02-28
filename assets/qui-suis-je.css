@@ -1,0 +1,137 @@
+.page-qui-suis-je p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #5f646c;
+  margin-bottom: 20px;
+}
+
+/* 2. Les classes générées par les choix de couleurs */
+.has-noir-titre-color {
+  color: #0f172a !important;
+}
+
+.has-gris-texte-color {
+  color: #5f646c !important;
+}
+
+.grille-soft-skills {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)) !important;
+  gap: 20px !important;
+  align-items: stretch !important;
+}
+
+.grille-soft-skills .wp-block-group {
+  background-color: #f8fafc;
+  border: 1px solid #5f646c;
+  border-radius: 16px;
+  padding: 24px 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.grille-soft-skills .wp-block-group p {
+  margin: 0 !important;
+}
+
+.grille-soft-skills .wp-block-group:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e1;
+  cursor: default;
+}
+
+.grille-soft-skills .wp-block-group p {
+  max-width: 200px;
+  margin: 0 auto !important;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.grille-soft-skills .wp-block-group p:first-child {
+  font-size: 28px;
+  margin-bottom: 8px !important;
+}
+
+.stacks-big-container {
+  display: flex;
+  flex-wrap: wrap !important;
+}
+
+.stacks-big-container .wp-block-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  background-color: #f8fafc;
+  border: 1px solid #5f646c;
+  border-radius: 16px;
+  padding: 10px 6px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.stacks-big-container .wp-block-group:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-color: #cbd5e1;
+  cursor: default;
+}
+
+.stacks-big-container .wp-block-group img {
+  height: 1.7em;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.pro-expe-container,
+.formation-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pro-expe-box,
+.formation-box {
+  display: flex;
+  gap: 10px;
+  height: auto;
+  width: 100%;
+}
+
+.factory-box,
+.school-box {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.factory-box img,
+.school-box img {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.work-duration,
+.studies-duration {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.school-text-content {
+  flex: 1; /*étire la div jusqu'au max à droite du main*/
+  width: 100%;
+}
+
+.school-text-content > * p,
+.factory-text-content > * p {
+  font-size: 0.75rem;
+}
