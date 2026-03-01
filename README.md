@@ -1,4 +1,5 @@
-![Capture d'écran](screenshot.jpg)
+
+![screenshot](https://github.com/user-attachments/assets/2812b2ec-7195-423e-ba9a-8a0fb495b70e)
 
 # Mon Portfolio Wordpress
 Un thème WordPress pour Portfolio sur mesure modifiable même sans savoir coder, en utilisant uniquement le site de wordpress.
